@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ 
+header {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    display: block;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+nav img {
+    margin-top: 5px;
+
+}
+
+nav button {
+    width: 40px;
+    height: 40px;
+    margin: 35px 0 0 100px;
+    border-radius: 30%;
+    
+}
+
+nav p {
+    margin-top: 25px;
+}
+
+
+@font-face {
+    font-family: 'Billabong';
+    src: url('billabong.ttf');
+}
+
+
+#logo-text {
+    font-family: 'Billabong';
+    font-size: 50px;
+}
+
+#add-post-container {
+
+    button {
+        border: none;
+        cursor: pointer;
+    }
+
+    &::backdrop {
+        background: #c4c4c4a1;
+    }
+
+}
+
+#profile-pic {
+    width: 100px;
+    height: 100px;
+
+} 
+
+.add-post-container {
+    padding: 20px;
+    border-radius: 20px;
+}
