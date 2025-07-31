@@ -13,18 +13,26 @@
             <ul>
                 <li><p id="logo-text">Javagram</p></li>
                 <li><button id="open-el" popovertarget="add-post-container">+</button></li>
-                <li><img src="images/nasa-profile.jpg"profile picture" id="profile-pic"></li>
+                <li><img src="images/nasa-profile.jpg" alt="profile-picture" id="profile-pic"></li>
             </ul>
         </nav>
     </header>
     <div class="add-post-container " id="add-post-container" popover>
-        <h2>Add Post</h2>
-        <label for="img-url">Image URL:</label>
-        <input type="text" name="img-url" id="img-url">
-        <label for="location">Location:</label>
-        <input type="text" id="location-el" name="location">
-        <button id="submit-el">Post</button>
-        <button id="cancel-el" popovertarget="add-post-container" popovertargetaction="hide">Cancel</button>
+        <div id="add-post-design">
+            <h2>Add Post</h2>
+            <label for="id-input">Id:</label>
+            <input type="text" name="id" id="id-input">
+            <label for="img-url-input">Image URL:</label>
+            <input type="text" name="img-url" id="img-url-input">
+            <label for="profile-input">Profile: </label>
+            <input type="text" name="profile" id="profile-input">
+            <label for="username-input">Username: </label>
+            <input type="text" name="nameofuser" id="username-input">
+            <label for="caption-input">Caption: </label>
+            <input type="text" name="caption" id="caption-input">
+            <button id="submit-el">Post</button>
+            <button id="cancel-el" popovertarget="add-post-container" popovertargetaction="hide">Cancel</button>
+        </div>
     </div>
 
     <div id="post-container">

@@ -1,53 +1,93 @@
-body {
-    margin: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+@font-face {
+    font-family: 'Billabong';
+    src: url('fonts/billabong.ttf');
 }
+
+@font-face {
+    font-family: 'instagram-sans';
+    src: url(fonts/Instagram\ Sans.ttf);
+}
+
+@font-face {
+    font-family: 'sans-bold';
+    src: url(fonts/Instagram\ Sans\ Medium.ttf);
+}
+
+
+
+body {
+    margin: 0 auto;
+    font-family: instagram-sans;
+    width: 100%;
+}
+
+
 
  
 header {
-    margin: 0;
-    width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: rgb(248, 248, 248);
+    padding: 5px;
 }
 
 nav {
-    display: block;
+    display: flex;
 }
 
-ul {
+nav ul {
     display: flex;
     list-style: none;
+    margin: 0;
 }
 
 nav img {
-    margin-top: 5px;
+    margin: 5px 0 0 10px;
+    border-radius: 50%;
+
 
 }
 
 nav button {
-    width: 40px;
-    height: 40px;
-    margin: 35px 0 0 100px;
+    width: 30px;
+    height: 30px;
+    margin: 30px 0 0 220px;
     border-radius: 30%;
     
 }
 
 nav p {
-    margin-top: 25px;
+    margin: 15px 0 0 -50px;
 }
 
-
-@font-face {
-    font-family: 'Billabong';
-    src: url('billabong.ttf');
-}
 
 
 #logo-text {
     font-family: 'Billabong';
     font-size: 50px;
+}
+
+
+#profile-pic {
+    width: 80px;
+    height: 80px;
+    
+} 
+
+
+#head {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#head img {
+    width: 80px;
+    height: 80px;
 }
 
 #add-post-container {
@@ -63,13 +103,82 @@ nav p {
 
 }
 
-#profile-pic {
-    width: 100px;
-    height: 100px;
-
-} 
-
 .add-post-container {
     padding: 20px;
     border-radius: 20px;
 }
+
+#post-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+#post-from-java {
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#username {
+    font-family: sans-bold;
+    font-size:18px;
+}
+
+#post-from-java {
+    margin-top: 20px;
+
+
+    #head {
+        margin: 0 15px;
+    }
+
+    #head img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        padding: 10px;
+
+    }
+
+    #body {
+        margin: 0 20px;
+    }
+
+    #body img{
+        max-width: 460px;
+        max-height: 720px;
+    }
+
+    #body ul {
+        list-style: none;
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 5px;
+        img {
+            width: 25px;
+            height: 25px;
+            margin-right: 10px;
+
+        }
+
+    
+
+    }
+
+    #bookmark {
+        margin-left: 320px;
+    }
+
+
+
+    #comment-section{
+        margin: -15px 23px 0 23px;
+    }
+
+    
+
+    
+}
+
+
